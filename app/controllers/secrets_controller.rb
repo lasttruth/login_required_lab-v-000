@@ -8,4 +8,9 @@ class SecretsController < ApplicationController
       @secret = session[:name]
     end
   end
+
+
+  def require_login
+    redirect_to root_path unless current_user
+  end
 end
