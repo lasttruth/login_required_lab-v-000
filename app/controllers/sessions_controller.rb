@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
         else
           redirect_to welcome_path
         end
-      end
+    end
 
   def destroy
     session.delete(:name)
