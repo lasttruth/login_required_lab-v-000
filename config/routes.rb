@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'secrets/welcome'
+
   root 'sessions#new'
   get '/show' => 'secrets#show'
   get '/welcome' => 'secrets#welcome'
